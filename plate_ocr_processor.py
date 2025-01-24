@@ -5,7 +5,9 @@ from google.cloud import vision
 import numpy as np
 
 # Set path ke kredensial Google Vision API
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"D:\\My Data\\MY ALL\\Kuliah\\SMT 7\\Pengolahan Citra\\tugas-akhir\\credentials.json"
+
+# TODO: change path to credentials.json location
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"C:\\Example\\credentials.json"
 
 # Fungsi untuk membaca gambar dan melakukan preprocessing (Otsu Thresholding)
 def adaptive_filtering_otsu(image_path):
